@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdownmind"
+version = "1.0.0"
+description = "🧠 Lightweight Markdown Document Intelligence & Knowledge Graph CLI"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "MarkdownMind Team", email = "hello@markdownmind.dev"}
+]
+keywords = [
+    "markdown",
+    "knowledge-graph",
+    "semantic-search",
+    "cli",
+    "documentation",
+    "notes",
+    "knowledge-base",
+    "obsidian",
+    "zettelkasten",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Documentation",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+markdownmind = "markdownmind.cli:main"
+mdmind = "markdownmind.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/MarkdownMind"
+Documentation = "https://github.com/gitstq/MarkdownMind#readme"
+Repository = "https://github.com/gitstq/MarkdownMind"
+"Bug Tracker" = "https://github.com/gitstq/MarkdownMind/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["markdownmind*"]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+markdownmind = ["py.typed"]

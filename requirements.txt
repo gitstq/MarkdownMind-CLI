@@ -1,0 +1,10 @@
+# MarkdownMind Dependencies
+# 轻量级Markdown文档智能知识图谱与语义搜索CLI引擎
+
+# No external dependencies required!
+# 零外部依赖，纯Python标准库实现
+
+# Optional dependencies for enhanced features (optional)
+# 可选依赖，用于增强功能（可选安装）
+# rich>=13.0.0  # Enhanced terminal output
+# click>=8.0.0  # Alternative CLI framework
