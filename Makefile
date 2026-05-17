@@ -102,13 +102,13 @@ demo:
 	$(PYTHON) -m markdownmind.cli scan example_vault
 	@echo ""
 	@echo "📊 Vault Statistics:"
-	$(PYTHON) -m markdownmind.cli stats --vault example_vault
+	cd example_vault && $(PYTHON) -m markdownmind.cli stats
 	@echo ""
 	@echo "🔍 Search for 'python':"
-	$(PYTHON) -m markdownmind.cli search "python" --vault example_vault
+	cd example_vault && $(PYTHON) -m markdownmind.cli search "python"
 	@echo ""
 	@echo "🏷️  All Tags:"
-	$(PYTHON) -m markdownmind.cli tags --vault example_vault
+	cd example_vault && $(PYTHON) -m markdownmind.cli tags
 	@echo ""
 	@echo "🔗 Related to welcome.md:"
-	$(PYTHON) -m markdownmind.cli related welcome.md --vault example_vault
+	cd example_vault && $(PYTHON) -m markdownmind.cli related welcome.md
